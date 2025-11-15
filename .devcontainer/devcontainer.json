@@ -1,24 +1,21 @@
 {
   "name": "AWS Training Certificate System",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.9"
-    },
-    "ghcr.io/devcontainers/features/terraform:1": {}
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
   },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-python.python",
-        "hashicorp.terraform",
-        "amazonwebservices.aws-toolkit-vscode",
-        "ms-vscode.vscode-json"
+        "amazonwebservices.aws-toolkit-vscode"
       ]
     }
   },
-  "postCreateCommand": "bash .devcontainer/setup.sh",
-  "forwardPorts": [3000, 8080],
-  "remoteUser": "node"
+  "postCreateCommand": "python -m pip install --upgrade pip && pip install boto3 pillow pandas openpyxl weasyprint",
+  "forwardPorts": [8080, 3000],
+  "remoteUser": "vscode"
 }
