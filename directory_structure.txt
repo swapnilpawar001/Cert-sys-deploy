@@ -1,0 +1,1218 @@
+📁 /workspaces/aws-training-certificate-system
+total 96
+drwxrwxrwx+ 12 vscode root    4096 Nov 26 13:38 .
+drwxr-xrwx+  6 vscode root    4096 Nov 16 18:49 ..
+drwxrwxrwx+  2 vscode vscode  4096 Nov 15 18:07 .bin
+drwxrwxrwx+  2 vscode vscode  4096 Nov 15 18:12 .devcontainer
+drwxrwxrwx+  8 vscode root    4096 Nov 26 07:11 .git
+-rw-rw-rw-   1 vscode root     478 Nov 15 16:16 .gitignore
+-rw-rw-rw-   1 vscode root     802 Nov 15 16:04 README.md
+-rw-rw-rw-   1 vscode vscode   927 Nov 15 17:26 UPLOAD_INSTRUCTIONS.md
+drwxrwxrwx+  2 vscode vscode  4096 Nov 26 13:14 __pycache__
+drwxrwxrwx+  5 vscode vscode  4096 Nov 26 13:31 app
+drwxrwxrwx+  6 vscode vscode  4096 Nov 26 13:31 aws-deployment
+drwxrwxrwx+  5 vscode vscode  4096 Nov 15 16:04 backend
+drwxrwxrwx+  2 vscode vscode  4096 Nov 26 13:31 deployment
+-rw-rw-rw-   1 vscode vscode    49 Nov 26 13:38 directory_structure.txt
+-rw-rw-rw-   1 vscode vscode  1389 Nov 26 13:18 flask_aws_test.log
+drwxrwxrwx+  5 vscode vscode  4096 Nov 15 16:19 frontend
+-rw-rw-rw-   1 vscode vscode 20663 Nov 15 16:18 package-lock.json
+-rw-rw-rw-   1 vscode vscode   481 Nov 15 16:17 package.json
+drwxrwxrwx+  2 vscode vscode  4096 Nov 26 13:29 tests
+📁 /workspaces/aws-training-certificate-system/.git
+total 64
+drwxrwxrwx+   8 vscode root   4096 Nov 26 07:11 .
+drwxrwxrwx+  12 vscode root   4096 Nov 26 13:38 ..
+-rw-rw-rw-    1 vscode vscode   28 Nov 24 13:26 COMMIT_EDITMSG
+-rw-rw-rw-    1 vscode root    126 Nov 26 13:36 FETCH_HEAD
+-rw-rw-rw-    1 vscode vscode   21 Nov 17 15:53 HEAD
+-rw-rw-rw-    1 vscode vscode   41 Nov 24 05:47 ORIG_HEAD
+-rw-rw-rw-    1 vscode vscode  585 Nov 15 18:04 config
+-rw-rw-rw-    1 vscode root     73 Nov 15 15:57 description
+drwxrwxrwx+   2 vscode root   4096 Nov 15 15:57 hooks
+-rw-rw-rw-    1 vscode vscode 2927 Nov 26 07:11 index
+drwxrwxrwx+   2 vscode root   4096 Nov 15 15:57 info
+drwxr-xr-x+   5 vscode vscode 4096 Nov 16 16:04 lfs
+drwxrwxrwx+   3 vscode root   4096 Nov 15 15:57 logs
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 objects
+-rw-rw-rw-    1 vscode root    112 Nov 15 15:57 packed-refs
+drwxrwxrwx+   5 vscode root   4096 Nov 15 15:57 refs
+📁 /workspaces/aws-training-certificate-system/.git/hooks
+total 88
+drwxrwxrwx+ 2 vscode root   4096 Nov 15 15:57 .
+drwxrwxrwx+ 8 vscode root   4096 Nov 26 07:11 ..
+-rwxrwxrwx  1 vscode root    478 Nov 15 15:57 applypatch-msg.sample
+-rwxrwxrwx  1 vscode root    896 Nov 15 15:57 commit-msg.sample
+-rwxrwxrwx  1 vscode root   4726 Nov 15 15:57 fsmonitor-watchman.sample
+-rwxr-xr-x  1 vscode vscode  360 Nov 15 15:57 post-checkout
+-rwxr-xr-x  1 vscode vscode  356 Nov 15 15:57 post-commit
+-rwxr-xr-x  1 vscode vscode  354 Nov 15 15:57 post-merge
+-rwxrwxrwx  1 vscode root    189 Nov 15 15:57 post-update.sample
+-rwxrwxrwx  1 vscode root    424 Nov 15 15:57 pre-applypatch.sample
+-rwxrwxrwx  1 vscode root   1649 Nov 15 15:57 pre-commit.sample
+-rwxrwxrwx  1 vscode root    416 Nov 15 15:57 pre-merge-commit.sample
+-rwxr-xr-x  1 vscode vscode  350 Nov 15 15:57 pre-push
+-rwxrwxrwx  1 vscode root   1374 Nov 15 15:57 pre-push.sample
+-rwxrwxrwx  1 vscode root   4898 Nov 15 15:57 pre-rebase.sample
+-rwxrwxrwx  1 vscode root    544 Nov 15 15:57 pre-receive.sample
+-rwxrwxrwx  1 vscode root   1492 Nov 15 15:57 prepare-commit-msg.sample
+-rwxrwxrwx  1 vscode root   2783 Nov 15 15:57 push-to-checkout.sample
+-rwxrwxrwx  1 vscode root   2308 Nov 15 15:57 sendemail-validate.sample
+-rwxrwxrwx  1 vscode root   3650 Nov 15 15:57 update.sample
+📁 /workspaces/aws-training-certificate-system/.git/info
+total 12
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 8 vscode root 4096 Nov 26 07:11 ..
+-rw-rw-rw-  1 vscode root  240 Nov 15 15:57 exclude
+📁 /workspaces/aws-training-certificate-system/.git/refs
+total 20
+drwxrwxrwx+ 5 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 8 vscode root 4096 Nov 26 07:11 ..
+drwxrwxrwx+ 2 vscode root 4096 Nov 24 13:26 heads
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 remotes
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 15:57 tags
+📁 /workspaces/aws-training-certificate-system/.git/refs/tags
+total 8
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 5 vscode root 4096 Nov 15 15:57 ..
+📁 /workspaces/aws-training-certificate-system/.git/refs/heads
+total 12
+drwxrwxrwx+ 2 vscode root   4096 Nov 24 13:26 .
+drwxrwxrwx+ 5 vscode root   4096 Nov 15 15:57 ..
+-rw-rw-rw-  1 vscode vscode   41 Nov 24 13:26 main
+📁 /workspaces/aws-training-certificate-system/.git/refs/remotes
+total 12
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 5 vscode root 4096 Nov 15 15:57 ..
+drwxrwxrwx+ 2 vscode root 4096 Nov 26 13:36 origin
+📁 /workspaces/aws-training-certificate-system/.git/refs/remotes/origin
+total 16
+drwxrwxrwx+ 2 vscode root   4096 Nov 26 13:36 .
+drwxrwxrwx+ 3 vscode root   4096 Nov 15 15:57 ..
+-rw-rw-rw-  1 vscode root     30 Nov 15 15:57 HEAD
+-rw-rw-rw-  1 vscode vscode   41 Nov 24 13:27 main
+📁 /workspaces/aws-training-certificate-system/.git/objects
+total 500
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 .
+drwxrwxrwx+   8 vscode root   4096 Nov 26 07:11 ..
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 00
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 01
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 07
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:19 09
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 0a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 0d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 0e
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 0f
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 14
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 15
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 18
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 1a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:19 1b
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 1c
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 15:58 1d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 20
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 21
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 24
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 25
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 2a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 2c
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 2d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 31
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 34
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 35
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 36
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 15:58 37
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 3a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 3b
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 3c
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 3d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 3f
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 40
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 42
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 45
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 46
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 47
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 4b
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 4c
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 4d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 4e
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 51
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:18 53
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 55
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 56
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 58
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:48 5e
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 62
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 63
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 64
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 65
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 67
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 6a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 6c
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 6d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:21 71
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 73
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 76
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 77
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 78
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 7b
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 7d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 81
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 83
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 86
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:26 88
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 89
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 8d
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 8f
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 94
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 96
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 97
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 9a
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 9e
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 9f
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 a4
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:21 a5
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 a7
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 ab
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:26 ac
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 b2
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 b3
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 b4
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 b7
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 b9
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 bb
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 bf
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 c1
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 c3
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:24 c5
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 c7
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 c9
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 ca
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 cb
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 ce
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 cf
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 d1
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:24 d4
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 d5
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 d8
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 db
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 dc
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 dd
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 df
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 e1
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 e2
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 e3
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 e4
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 e6
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 e7
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 e8
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 e9
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 eb
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 ec
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 f5
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 f7
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 f9
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 fd
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:48 fe
+drwxrwxrwx+   2 vscode root   4096 Nov 15 15:57 info
+drwxrwxrwx+   2 vscode root   4096 Nov 15 15:57 pack
+📁 /workspaces/aws-training-certificate-system/.git/objects/e3
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  358 Nov 16 17:31 bd55c99ed39f171d959876fd5e7c87eb7e6432
+📁 /workspaces/aws-training-certificate-system/.git/objects/63
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1788 Nov 24 06:16 5b6b1acc1838c571243b7679b9c4199519d906
+📁 /workspaces/aws-training-certificate-system/.git/objects/6a
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  328 Nov 17 15:53 0748d57fbc2fd85e393bcd9e8b0e8cca70e67a
+📁 /workspaces/aws-training-certificate-system/.git/objects/2d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  903 Nov 24 13:07 f7bbcbf2de3bbc26fcc7254c002e5ddf4eb303
+📁 /workspaces/aws-training-certificate-system/.git/objects/94
+total 412
+drwxrwxrwx+   2 vscode vscode   4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode     51 Nov 24 06:16 7a0526f97881fc050a3280f2a5d827eeaecc8d
+-r--r--r--    1 vscode vscode 408377 Nov 24 13:07 ceba9c33d3c4cdd1548a6527dfad9d28158c12
+📁 /workspaces/aws-training-certificate-system/.git/objects/1b
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:19 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  176 Nov 24 13:19 014bb4c2977e63b284a5fe8196ebd39857f271
+📁 /workspaces/aws-training-certificate-system/.git/objects/4e
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  623 Nov 24 05:47 7ca8d94eb2c429806442ba0e7a4de6f9eaf09a
+📁 /workspaces/aws-training-certificate-system/.git/objects/89
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  609 Nov 16 17:31 0653a33fb5ea4f9d5a71182dc5df829f15c346
+📁 /workspaces/aws-training-certificate-system/.git/objects/58
+total 80
+drwxrwxrwx+   2 vscode vscode  4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root    4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   117 Nov 15 17:33 54b963fecdce36464ffb224742a9101d164651
+-r--r--r--    1 vscode vscode    79 Nov 24 06:55 b643b53d1e35a4591fbf4b5de9b86aab0b2083
+-r--r--r--    1 vscode vscode 63856 Nov 15 17:33 b963910ba955a87bcc2271251b4523f82fb019
+📁 /workspaces/aws-training-certificate-system/.git/objects/78
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   97 Nov 16 16:08 b535113dae5bbe16e5eef238fa439d85ee5171
+📁 /workspaces/aws-training-certificate-system/.git/objects/56
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  772 Nov 17 15:53 3a87755bc1d778aef920a5bce633438bf3bf72
+📁 /workspaces/aws-training-certificate-system/.git/objects/83
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   45 Nov 16 15:58 776d870badde02157bb7fe50a3bba69b41ea44
+-r--r--r--    1 vscode vscode   55 Nov 17 15:53 edf964af1288192380448cd5eb7708dbd6bcf8
+📁 /workspaces/aws-training-certificate-system/.git/objects/88
+total 128
+drwxrwxrwx+   2 vscode vscode   4096 Nov 17 15:26 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 117649 Nov 17 15:26 42f350c569942024e1acb2fd108b19545e2a08
+-r--r--r--    1 vscode vscode    489 Nov 17 15:26 664ed12fe9a0b6f743f68f9b5a88a59fe06771
+📁 /workspaces/aws-training-certificate-system/.git/objects/20
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   46 Nov 24 13:24 58f77ebee989a63a4d3e358f3c40fa8f1fc501
+📁 /workspaces/aws-training-certificate-system/.git/objects/51
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  986 Nov 24 06:55 112801f37c040f9094b2e28b2acceabb10625f
+-r--r--r--    1 vscode vscode   53 Nov 24 06:16 e56ffd5b229f061210650db356541ca72c184e
+📁 /workspaces/aws-training-certificate-system/.git/objects/3f
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  267 Nov 17 15:53 a6f7fb4cb72e36904adbbe70d48477cdf700ab
+-r--r--r--    1 vscode vscode  307 Nov 15 17:33 e58ed1b36966d9fd38c4b9a4c6fd6a6c7bf796
+📁 /workspaces/aws-training-certificate-system/.git/objects/bf
+total 32
+drwxrwxrwx+   2 vscode vscode  4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root    4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 21899 Nov 15 16:05 dc7bcadeb9bc0c954db929e0d3815876920fb6
+📁 /workspaces/aws-training-certificate-system/.git/objects/dd
+total 20
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   97 Nov 15 17:33 16cabb49706e41151d3e43ed4d15d8db3c30fc
+-r--r--r--    1 vscode vscode  436 Nov 16 17:31 cde3a62a0bc24c443995168a966068e4e3f618
+-r--r--r--    1 vscode vscode   97 Nov 16 15:58 f3b944b77516e7132fde4664e2d957cf0adbfe
+📁 /workspaces/aws-training-certificate-system/.git/objects/65
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   71 Nov 24 13:07 ac1119a704ec80ff757073aedaad2e7d32354b
+-r--r--r--    1 vscode vscode   66 Nov 15 17:33 bc154d70f975df2020af0b9972f8740a1c7d46
+📁 /workspaces/aws-training-certificate-system/.git/objects/db
+total 476
+drwxrwxrwx+   2 vscode vscode   4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode    825 Nov 17 15:53 378333544cdc8d130d8a7445db0d17fb1f3fb7
+-r--r--r--    1 vscode vscode    805 Nov 24 06:55 3ba4fe10a3fc0d694a0b173eaf910d9430bdd0
+-r--r--r--    1 vscode vscode 454698 Nov 16 16:08 3e5c68aba03422a76049547ca167cc1ff8dd60
+-r--r--r--    1 vscode vscode    317 Nov 24 06:55 5f864cfde330a96dfb263d27e7fbc002b1223e
+-r--r--r--    1 vscode vscode     79 Nov 24 13:07 aca13a8a59926557ab1a221231671b1602aae4
+-r--r--r--    1 vscode vscode     52 Nov 15 17:33 b706db710009e7cd56779c6fe5951e5a730100
+📁 /workspaces/aws-training-certificate-system/.git/objects/b3
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   45 Nov 15 17:33 662716ebb9d324ea203fa5b8bdea1b7e0861f7
+📁 /workspaces/aws-training-certificate-system/.git/objects/1a
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  135 Nov 15 16:05 2c54e25187801b6bf42a4abdeb3cb80a3a1e31
+-r--r--r--    1 vscode vscode   87 Nov 24 06:55 d9426aca31721cf0c15ce1fa0179a63f193251
+📁 /workspaces/aws-training-certificate-system/.git/objects/71
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:21 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  166 Nov 24 06:17 945a68271ee6ab7250f62f94f791f19bca045f
+-r--r--r--    1 vscode vscode  828 Nov 24 13:21 f603430640afb4d42e0ceb557a62eb43797774
+📁 /workspaces/aws-training-certificate-system/.git/objects/9e
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   67 Nov 16 16:08 3305083ec9c2a6856896206da75f3c8ad81fcb
+📁 /workspaces/aws-training-certificate-system/.git/objects/c9
+total 816
+drwxrwxrwx+   2 vscode vscode   4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode    183 Nov 24 05:47 1180968330d9058e5756f8dbb404b7ab4a11d7
+-r--r--r--    1 vscode vscode 410937 Nov 17 15:53 276c0e60bad77585ce18525cf717a02b8dc3ce
+-r--r--r--    1 vscode vscode 409146 Nov 24 13:07 9e44eb17ef7b69ddcdf1fde2a77c20bff31a50
+📁 /workspaces/aws-training-certificate-system/.git/objects/b4
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   96 Nov 15 17:33 e67ae37b988a853668276ae5abc3ef50d91519
+📁 /workspaces/aws-training-certificate-system/.git/objects/d1
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   94 Nov 15 16:01 b1140402a519b5e3d242e832410f4d0f60603b
+📁 /workspaces/aws-training-certificate-system/.git/objects/3c
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  415 Nov 24 13:07 937d722965b9e4eb19c72ff3eaf282c544944d
+📁 /workspaces/aws-training-certificate-system/.git/objects/0e
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2783 Nov 24 06:16 b28331b963bafe07f93617626f403eab172716
+📁 /workspaces/aws-training-certificate-system/.git/objects/3b
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1629 Nov 24 06:16 56effcf0c6bc62b556ca90e2470883d04c4420
+-r--r--r--    1 vscode vscode  291 Nov 15 17:33 b6107409d1a9dc202899dc2a2b29407382f31e
+📁 /workspaces/aws-training-certificate-system/.git/objects/36
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1183 Nov 16 17:31 e7166f42d14a4cfa20e9806dbb018d210dd6c1
+📁 /workspaces/aws-training-certificate-system/.git/objects/cb
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   69 Nov 16 15:58 180fb220b319622c0e88fc3f04409eb314d9df
+-r--r--r--    1 vscode vscode  986 Nov 24 06:16 a5227ed45e9a8f1959704a83d92284fed01cf8
+📁 /workspaces/aws-training-certificate-system/.git/objects/15
+total 24
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  139 Nov 16 17:31 1161c87ed3752289e3ec073e7a09fd91d5e8ce
+-r--r--r--    1 vscode vscode   71 Nov 24 06:16 26b9d65ce1c766aaf1068be3d6f2e04a48a28f
+-r--r--r--    1 vscode vscode 1506 Nov 17 15:53 369750a9a526b6fd5bde65da63c6825e82c6a9
+-r--r--r--    1 vscode vscode   79 Nov 17 15:53 d89cf8950ebfa9e1eddf6779409c18b0eb4618
+📁 /workspaces/aws-training-certificate-system/.git/objects/46
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  471 Nov 24 13:26 4d8a009ae8b9f78d007146a1d58eb130e1d31e
+📁 /workspaces/aws-training-certificate-system/.git/objects/14
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  183 Nov 24 06:55 f396d93f67e3990a93b1b5aae837fdd92d7576
+📁 /workspaces/aws-training-certificate-system/.git/objects/e9
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1633 Nov 15 16:05 a0bf4fe9035ddc7d86041fd79f07e3e6dfef13
+-r--r--r--    1 vscode vscode  747 Nov 24 05:47 eaebef2f47a69f7f0b2d73035a6cfee17161e4
+📁 /workspaces/aws-training-certificate-system/.git/objects/a4
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  166 Nov 24 13:07 fb32391b9e20adb9cba3cebd99d51f7c6d3b7d
+📁 /workspaces/aws-training-certificate-system/.git/objects/a7
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  128 Nov 15 16:01 f87d474e80f4d6dc0ca89c61d40c97488de360
+📁 /workspaces/aws-training-certificate-system/.git/objects/34
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  191 Nov 16 17:31 2f3a5f64750a5dc1738c899526623777232f34
+📁 /workspaces/aws-training-certificate-system/.git/objects/45
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 3931 Nov 24 13:07 b213743c88ffd120e1c90a6f681ee9db2141c0
+📁 /workspaces/aws-training-certificate-system/.git/objects/f7
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  433 Nov 16 16:05 1a86de5e5cc8e0018d0b2924457d3f6ffa041f
+📁 /workspaces/aws-training-certificate-system/.git/objects/ac
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:26 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  827 Nov 17 15:26 747a7ede5b3cb82b813194ad297861f28f0a1e
+📁 /workspaces/aws-training-certificate-system/.git/objects/86
+total 24
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 6187 Nov 15 17:33 3e9d915ccfc1c2daf8ebcd2caf68648af64625
+-r--r--r--    1 vscode vscode 1274 Nov 24 13:07 5f2a8a0c2085541094c845ee732a05db134f1b
+-r--r--r--    1 vscode vscode  179 Nov 15 16:20 9de8233791c9fed7efa3ae84ce7a2ac48c178b
+📁 /workspaces/aws-training-certificate-system/.git/objects/pack
+total 20
+drwxrwxrwx+   2 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 125 vscode root 4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode root 1184 Nov 15 15:57 pack-0d63a8efbf64fbcd6b08432c79b34c26ca1552e8.idx
+-r--r--r--    1 vscode root 1955 Nov 15 16:01 pack-0d63a8efbf64fbcd6b08432c79b34c26ca1552e8.pack
+-r--r--r--    1 vscode root   68 Nov 15 15:57 pack-0d63a8efbf64fbcd6b08432c79b34c26ca1552e8.rev
+📁 /workspaces/aws-training-certificate-system/.git/objects/35
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  164 Nov 24 06:16 839b85ea25c95d85b5af6a5116a595289e91d7
+📁 /workspaces/aws-training-certificate-system/.git/objects/7d
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:08 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  204 Nov 15 16:18 460da7a256f009518b23fa9099a8bd7db16200
+-r--r--r--    1 vscode vscode   45 Nov 16 16:08 5d5e0b595030d034f70cf341df3e64db9b69f0
+📁 /workspaces/aws-training-certificate-system/.git/objects/d5
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1802 Nov 17 15:53 25ef73d29da4ffe92706236be565a790ef3521
+-r--r--r--    1 vscode vscode   55 Nov 15 16:20 a3cd6a2a207f790f811ebbe908c4775033615a
+📁 /workspaces/aws-training-certificate-system/.git/objects/ec
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  360 Nov 15 16:20 012098e4da91f6dc441c1088db66caca47656a
+📁 /workspaces/aws-training-certificate-system/.git/objects/fe
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:48 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  405 Nov 15 17:48 69e82e6a57ddd2df5c0232cf9edea0b7610958
+📁 /workspaces/aws-training-certificate-system/.git/objects/96
+total 20
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2859 Nov 16 17:31 4c2876f07b2b6787d978ef512dc8bf38f53818
+-r--r--r--    1 vscode vscode 5878 Nov 17 15:53 abdbccb004944f47b95cc80b79c4ddd18c07e1
+📁 /workspaces/aws-training-certificate-system/.git/objects/42
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  231 Nov 17 15:53 35e3edb9999ffc6573df9970b277838555b7a2
+-r--r--r--    1 vscode vscode  460 Nov 16 17:31 9d3f3defa373d24e81283be0147a131880b17b
+📁 /workspaces/aws-training-certificate-system/.git/objects/73
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   97 Nov 24 06:55 9c9ae5e1377c58177c1e209a037673ed29697d
+📁 /workspaces/aws-training-certificate-system/.git/objects/31
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2244 Nov 17 15:53 ba6857016d3cfdfe5d95fe9831f1c6b34d48fe
+📁 /workspaces/aws-training-certificate-system/.git/objects/dc
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  864 Nov 24 05:47 2ac494ce32568c18f67e68742e13723730ce69
+-r--r--r--    1 vscode vscode   98 Nov 17 15:53 3159d199723338a65158cde813b37d0e6a251a
+📁 /workspaces/aws-training-certificate-system/.git/objects/b2
+total 416
+drwxrwxrwx+   2 vscode vscode   4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 407873 Nov 24 13:07 5f5f32c4ad9cdd6575425717a43fe8b719efd6
+-r--r--r--    1 vscode vscode     63 Nov 15 17:33 8df33ba4c9c98bf03d6814cdea32e9eb0c00eb
+-r--r--r--    1 vscode vscode   1125 Nov 17 15:53 b82343defd87b7adcba2ebfc614fcd317cbce1
+📁 /workspaces/aws-training-certificate-system/.git/objects/e6
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   15 Nov 16 16:05 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+📁 /workspaces/aws-training-certificate-system/.git/objects/1c
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  660 Nov 16 17:31 d17964582fa5c9edd62a2fa248c3778c4709ab
+📁 /workspaces/aws-training-certificate-system/.git/objects/77
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 4183 Nov 24 13:07 75fd045101fc2d492f030a8ee33533e4e1c09b
+📁 /workspaces/aws-training-certificate-system/.git/objects/9f
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  165 Nov 16 16:05 a219fe9e0683c993281b60cf64c7996d37ff3c
+📁 /workspaces/aws-training-certificate-system/.git/objects/info
+total 8
+drwxrwxrwx+   2 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 125 vscode root 4096 Nov 26 13:36 ..
+📁 /workspaces/aws-training-certificate-system/.git/objects/18
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   72 Nov 17 15:53 e6d371395891751ec66407d60181f60eb0967f
+📁 /workspaces/aws-training-certificate-system/.git/objects/c3
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  165 Nov 15 16:01 5433755777924e638058c48afa139e42ea80cd
+📁 /workspaces/aws-training-certificate-system/.git/objects/fd
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:16 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  180 Nov 24 06:16 b462c02d2e586c2d2548bec1cb5cadebc0cf67
+📁 /workspaces/aws-training-certificate-system/.git/objects/4d
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  141 Nov 17 15:53 b3d36698803539a43fa1ecd57ab3bea56c0a56
+-r--r--r--    1 vscode vscode  104 Nov 16 17:31 b45d2ac55caf4b3399f9fb6b8ae30b536a68a7
+📁 /workspaces/aws-training-certificate-system/.git/objects/12
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   79 Nov 16 17:31 ad42e11af68b1840bc2a7f9376056d7850d929
+📁 /workspaces/aws-training-certificate-system/.git/objects/df
+total 448
+drwxrwxrwx+   2 vscode vscode   4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 446341 Nov 16 17:31 b3f861268c580b9485dd87157b9e0e4c66e7e3
+-r--r--r--    1 vscode vscode   2031 Nov 17 15:53 ce1905ba17d9c24c84fd60ec81f3e584f844bb
+📁 /workspaces/aws-training-certificate-system/.git/objects/00
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  157 Nov 15 17:33 69aefd623c30a2cb397f88afc3e6972f07770b
+📁 /workspaces/aws-training-certificate-system/.git/objects/6d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1632 Nov 24 13:07 9a012441d6b9891b1c94065cde0d0a0cacaf10
+📁 /workspaces/aws-training-certificate-system/.git/objects/67
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  671 Nov 16 17:31 c5147878b44e8f0413fe9ca8a239e6b9094b3f
+📁 /workspaces/aws-training-certificate-system/.git/objects/eb
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  845 Nov 24 13:07 ebb97284a8f93c28054647cb0374de07f8e057
+📁 /workspaces/aws-training-certificate-system/.git/objects/bb
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  162 Nov 24 05:47 a4e69d84e90f3a74bd4b9d0fd11dabaa972cef
+📁 /workspaces/aws-training-certificate-system/.git/objects/21
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   51 Nov 15 17:33 cf2ad8af085eeba4074f1bfdde0859e4b5a27a
+📁 /workspaces/aws-training-certificate-system/.git/objects/e8
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  111 Nov 15 17:33 4ceba3d8abf3dd3eda807b3d00fc6bc6d2618e
+📁 /workspaces/aws-training-certificate-system/.git/objects/ab
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:33 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   67 Nov 15 17:33 2b67e7b2e3707847d9f06b262418b88cf0a7b4
+📁 /workspaces/aws-training-certificate-system/.git/objects/37
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 15:58 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  405 Nov 16 16:05 36e066701311c6e8c937d26d4cb3c77e49880d
+📁 /workspaces/aws-training-certificate-system/.git/objects/0d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2339 Nov 17 15:53 d119649757912b5b18d81db05165fdeb93da9b
+📁 /workspaces/aws-training-certificate-system/.git/objects/cf
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   51 Nov 17 15:53 75e4d0a3bfe034a0e3e19025cadae3263cb978
+-r--r--r--    1 vscode vscode  343 Nov 24 13:07 a45b50ef7c2f3ce2569870f1fe7d28ff5c28ef
+📁 /workspaces/aws-training-certificate-system/.git/objects/d8
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  120 Nov 17 15:53 a074b433fd911157548160b19e242e9db96ec6
+-r--r--r--    1 vscode vscode  343 Nov 15 17:48 ba9ece0dffc3d7a005c9e14b26fd9b3fd1b6d7
+📁 /workspaces/aws-training-certificate-system/.git/objects/e4
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2756 Nov 16 17:31 cadc7fc64752cfb232afb9edef1cc18e2c35da
+-r--r--r--    1 vscode vscode  350 Nov 15 17:48 e3319ba6836afef0fc449dc3e17db46fae695e
+📁 /workspaces/aws-training-certificate-system/.git/objects/ca
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  174 Nov 24 13:26 ec8ccf5199f6e8bc8601e4a0d8a3aa58ee3e65
+📁 /workspaces/aws-training-certificate-system/.git/objects/09
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:19 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  921 Nov 24 13:19 382e86a89615a3cfb518b6c86091706a57943b
+📁 /workspaces/aws-training-certificate-system/.git/objects/40
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   54 Nov 17 15:53 dd78d6a107ebb540278d389cc1c8e3522a8faa
+📁 /workspaces/aws-training-certificate-system/.git/objects/9a
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  125 Nov 17 15:53 89e91c775471446db3a30e792e8601e2bcc0ee
+📁 /workspaces/aws-training-certificate-system/.git/objects/62
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   97 Nov 16 17:31 03113ca7f1ed1a38f4066b5de094255d2d4173
+📁 /workspaces/aws-training-certificate-system/.git/objects/e7
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   52 Nov 15 17:33 51f708fa9cae10778bf079a6c5abbe0ad05399
+📁 /workspaces/aws-training-certificate-system/.git/objects/47
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  169 Nov 17 15:53 bd578009c22bc20bbbf686f31aa9206485114b
+📁 /workspaces/aws-training-certificate-system/.git/objects/f9
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  618 Nov 15 16:05 2add4ec2a38f25f333cd4eca75cdda51627cdd
+📁 /workspaces/aws-training-certificate-system/.git/objects/1d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 15:58 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  173 Nov 16 15:58 20c4da79f7237c2582e325f1a3e4b4d04fc720
+📁 /workspaces/aws-training-certificate-system/.git/objects/81
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   55 Nov 15 17:33 23a484e48e5b63593bf0a80bc68b394d28e64a
+📁 /workspaces/aws-training-certificate-system/.git/objects/07
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   77 Nov 16 17:31 6c68e28b1daa14d1e8b71db9ac59b97d5c4b74
+📁 /workspaces/aws-training-certificate-system/.git/objects/8d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 2703 Nov 17 15:53 d9216032d3938aff7580df2963d9e6bbecf4d9
+📁 /workspaces/aws-training-certificate-system/.git/objects/3d
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  194 Nov 15 16:05 6b09d40e3bfff831b4fdd94887d77414bb9111
+📁 /workspaces/aws-training-certificate-system/.git/objects/e1
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  190 Nov 15 16:05 c1137d4fc407e25d095b9906f45c01cc0e770c
+📁 /workspaces/aws-training-certificate-system/.git/objects/8f
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  132 Nov 15 17:48 0d2743a8ffefba52c602969cd78f0633e6bc89
+-r--r--r--    1 vscode vscode  159 Nov 16 16:05 5a061a1ce4fc8b6184bceabf784349c890ff6c
+📁 /workspaces/aws-training-certificate-system/.git/objects/0a
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  664 Nov 24 13:07 57bb25fab97b2fce7cc03590495b825f5a3137
+-r--r--r--    1 vscode vscode   55 Nov 24 06:16 e052024f4493f36e16bb9579dd17c4d09074ae
+📁 /workspaces/aws-training-certificate-system/.git/objects/97
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  455 Nov 15 17:33 376c447e37918d904e65d98dbee47fa0a7dfe2
+📁 /workspaces/aws-training-certificate-system/.git/objects/2c
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   83 Nov 16 17:31 595bbfcc398c81fd4ff897238cd7ec0e9ac9e3
+-r--r--r--    1 vscode vscode  809 Nov 16 17:31 96072d300dfb23ec9924574880bcb63f0926cd
+📁 /workspaces/aws-training-certificate-system/.git/objects/b7
+total 59496
+drwxrwxrwx+   2 vscode vscode     4096 Nov 15 16:05 .
+drwxrwxrwx+ 125 vscode root       4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 60908840 Nov 15 16:05 845ea548d839332eda83b2c3f9f86e8a7f25c0
+📁 /workspaces/aws-training-certificate-system/.git/objects/01
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  405 Nov 16 16:08 1a7c5518f2a218d736c93ea41f8683eef5421e
+-r--r--r--    1 vscode vscode 2828 Nov 16 17:31 ad1ce6a4816892a5d90897db30db2f8a527b3e
+📁 /workspaces/aws-training-certificate-system/.git/objects/7b
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   69 Nov 24 13:26 f5f2539533aa9b9d80acbe2d301c6ff3f3df17
+📁 /workspaces/aws-training-certificate-system/.git/objects/64
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:20 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  190 Nov 17 15:53 8354c59d0890689a7f6b7bbeab88d7a3ba4da6
+📁 /workspaces/aws-training-certificate-system/.git/objects/24
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:26 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  139 Nov 24 13:26 a07d2f0b0d838f303ed0b43b9cdc46453e10fb
+📁 /workspaces/aws-training-certificate-system/.git/objects/c1
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1475 Nov 16 17:31 8792bae8184144d2d58b8ecaead027f68eeb77
+📁 /workspaces/aws-training-certificate-system/.git/objects/6c
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   98 Nov 15 17:33 93743cfd8675cb8b0b773cdaee5174c71b6979
+-r--r--r--    1 vscode vscode  577 Nov 17 15:53 dfb0077bbbe1c4cd20fd51cf34e0a4df22e593
+📁 /workspaces/aws-training-certificate-system/.git/objects/c7
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  987 Nov 24 06:17 0eddd3550f13fc4591638b056dce188e4e35f1
+📁 /workspaces/aws-training-certificate-system/.git/objects/ce
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  174 Nov 17 15:53 87342997c73637b13733234b295fff1f6d8bcd
+📁 /workspaces/aws-training-certificate-system/.git/objects/53
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:18 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  185 Nov 15 16:18 e203e08334cb861c2394ae62a7c2dc334b8c84
+📁 /workspaces/aws-training-certificate-system/.git/objects/3a
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 16:01 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  455 Nov 15 17:33 c357a44dac93c2a5077b734f1c956e9727b0e3
+📁 /workspaces/aws-training-certificate-system/.git/objects/76
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   55 Nov 24 13:07 7cb6514230dd33dfd0ed82a340175b513594dd
+📁 /workspaces/aws-training-certificate-system/.git/objects/0f
+total 420
+drwxrwxrwx+   2 vscode vscode   4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root     4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode    153 Nov 24 13:07 3c93e6ed7a88f94c78a88457772129b870be91
+-r--r--r--    1 vscode vscode    876 Nov 24 13:19 744f1f432787b0e30864978c24547fa60cd74c
+-r--r--r--    1 vscode vscode 411075 Nov 24 06:55 f222cce75af748118c118a349d2e265aab6247
+📁 /workspaces/aws-training-certificate-system/.git/objects/f5
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1915 Nov 17 15:53 03a9428a0bd75c372a12d83d190a8028a45b5e
+-r--r--r--    1 vscode vscode  404 Nov 15 17:33 46aff77f0528d982cbf7a0a7db3741d2572be2
+📁 /workspaces/aws-training-certificate-system/.git/objects/d4
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:24 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  178 Nov 24 13:24 18092b77f7c6cd810b63e25fa98e6828da8574
+📁 /workspaces/aws-training-certificate-system/.git/objects/4b
+total 20
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:07 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  164 Nov 16 16:08 c9ed0fef89e4dc31680b460d1dda74c5a88208
+-r--r--r--    1 vscode vscode 4410 Nov 24 13:07 fb16086d6f8b532f3e9e73c4e381c0d70c4a32
+📁 /workspaces/aws-training-certificate-system/.git/objects/25
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  226 Nov 17 15:53 2abb6a503449e9ed55621ac45e1c94d3c0163a
+-r--r--r--    1 vscode vscode   88 Nov 17 15:53 f3bfde2ddaf9704ab143ca5cb77ffed36a88ae
+📁 /workspaces/aws-training-certificate-system/.git/objects/b9
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 1017 Nov 16 17:31 977e9f54d5865ad9de93a6c00062ab1f1e7a15
+📁 /workspaces/aws-training-certificate-system/.git/objects/5e
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 15 17:48 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  156 Nov 15 17:48 01be91fd518d622fdb51ff363ae8f3d503d0b7
+📁 /workspaces/aws-training-certificate-system/.git/objects/a5
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:21 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  512 Nov 15 17:33 3800a70138244b4990f2190daaf5081c09052a
+-r--r--r--    1 vscode vscode  175 Nov 24 13:21 f6a152c57cbcec780431dc7710a4ab59df3d4e
+📁 /workspaces/aws-training-certificate-system/.git/objects/e2
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 05:47 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   55 Nov 17 15:53 5acdafb5e5fa9a3fa132e6ca7c649b65f9dfd9
+-r--r--r--    1 vscode vscode  257 Nov 24 05:47 a42fc969a0cb26abde8ffbbd016db62bd9853c
+📁 /workspaces/aws-training-certificate-system/.git/objects/4c
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 17 15:53 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode 5642 Nov 17 15:53 9e0f08da99bca5957c1f7a695945851165bf1f
+📁 /workspaces/aws-training-certificate-system/.git/objects/c5
+total 20
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 13:24 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  755 Nov 24 13:24 2200b22f121bd4055441ecae129495bf607215
+-r--r--r--    1 vscode vscode 4231 Nov 24 06:16 ce39e0d3496776ef54bb9237d90daa0359e60c
+📁 /workspaces/aws-training-certificate-system/.git/objects/2a
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:55 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode  750 Nov 24 06:55 b71fbc7fb048c5656b737005d42eb627337692
+📁 /workspaces/aws-training-certificate-system/.git/objects/55
+total 16
+drwxrwxrwx+   2 vscode vscode 4096 Nov 24 06:17 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   97 Nov 24 13:24 bbf215caa6bedb05b957ae67ef7b44010fcda4
+-r--r--r--    1 vscode vscode  177 Nov 16 17:31 e401216d6b4ac85a5fbaec63091723f2e356fe
+📁 /workspaces/aws-training-certificate-system/.git/objects/16
+total 12
+drwxrwxrwx+   2 vscode vscode 4096 Nov 16 17:31 .
+drwxrwxrwx+ 125 vscode root   4096 Nov 26 13:36 ..
+-r--r--r--    1 vscode vscode   67 Nov 16 17:31 c605faa1a3d4e2a637d20337eae01b389a56d6
+📁 /workspaces/aws-training-certificate-system/.git/lfs
+total 20
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 16 16:04 .
+drwxrwxrwx+ 8 vscode root   4096 Nov 26 07:11 ..
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 cache
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 16 16:04 objects
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 15 15:57 tmp
+📁 /workspaces/aws-training-certificate-system/.git/lfs/tmp
+total 8
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 15 15:57 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 16 16:04 ..
+📁 /workspaces/aws-training-certificate-system/.git/lfs/cache
+total 12
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 16 16:04 ..
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 locks
+📁 /workspaces/aws-training-certificate-system/.git/lfs/cache/locks
+total 12
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 .
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 ..
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 refs
+📁 /workspaces/aws-training-certificate-system/.git/lfs/cache/locks/refs
+total 12
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 .
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 ..
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 heads
+📁 /workspaces/aws-training-certificate-system/.git/lfs/cache/locks/refs/heads
+total 12
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 .
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 ..
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 15 16:02 main
+📁 /workspaces/aws-training-certificate-system/.git/lfs/cache/locks/refs/heads/main
+total 12
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 15 16:02 .
+drwxr-xr-x+ 3 vscode vscode 4096 Nov 15 16:02 ..
+-rw-rw-rw-  1 vscode vscode   24 Nov 24 13:27 verifiable
+📁 /workspaces/aws-training-certificate-system/.git/lfs/objects
+total 8
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 16 16:04 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 16 16:04 ..
+📁 /workspaces/aws-training-certificate-system/.git/logs
+total 20
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 8 vscode root 4096 Nov 26 07:11 ..
+-rw-rw-rw-  1 vscode root 4587 Nov 24 13:26 HEAD
+drwxrwxrwx+ 4 vscode root 4096 Nov 15 15:57 refs
+📁 /workspaces/aws-training-certificate-system/.git/logs/refs
+total 16
+drwxrwxrwx+ 4 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 ..
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 15:57 heads
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 remotes
+📁 /workspaces/aws-training-certificate-system/.git/logs/refs/heads
+total 16
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 4 vscode root 4096 Nov 15 15:57 ..
+-rw-rw-rw-  1 vscode root 4189 Nov 24 13:26 main
+📁 /workspaces/aws-training-certificate-system/.git/logs/refs/remotes
+total 12
+drwxrwxrwx+ 3 vscode root 4096 Nov 15 15:57 .
+drwxrwxrwx+ 4 vscode root 4096 Nov 15 15:57 ..
+drwxrwxrwx+ 2 vscode root 4096 Nov 15 16:02 origin
+📁 /workspaces/aws-training-certificate-system/.git/logs/refs/remotes/origin
+total 16
+drwxrwxrwx+ 2 vscode root   4096 Nov 15 16:02 .
+drwxrwxrwx+ 3 vscode root   4096 Nov 15 15:57 ..
+-rw-rw-rw-  1 vscode root    206 Nov 15 15:57 HEAD
+-rw-rw-rw-  1 vscode vscode 3365 Nov 24 13:27 main
+📁 /workspaces/aws-training-certificate-system/tests
+total 8
+drwxrwxrwx+  2 vscode vscode 4096 Nov 26 13:29 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+📁 /workspaces/aws-training-certificate-system/aws-deployment
+total 28
+drwxrwxrwx+  6 vscode vscode 4096 Nov 26 13:31 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+drwxrwxrwx+  2 vscode vscode 4096 Nov 26 13:13 __pycache__
+drwxrwxrwx+  3 vscode vscode 4096 Nov 26 13:20 aws-deployment-package
+drwxrwxrwx+  6 vscode vscode 4096 Nov 26 13:27 complete-aws-package
+drwxrwxrwx+  4 vscode vscode 4096 Nov 26 13:27 data
+-rw-rw-rw-   1 vscode vscode  741 Nov 26 13:16 gunicorn_test.log
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package
+total 56
+drwxrwxrwx+ 6 vscode vscode  4096 Nov 26 13:27 .
+drwxrwxrwx+ 6 vscode vscode  4096 Nov 26 13:31 ..
+drwxrwxrwx+ 2 vscode vscode  4096 Nov 26 13:27 __pycache__
+-rw-rw-rw-  1 vscode vscode  1206 Nov 26 13:27 app_aws.py
+-rw-rw-rw-  1 vscode vscode 15369 Nov 26 13:27 app_production.py
+drwxr-xr-x+ 5 vscode vscode  4096 Nov 26 13:24 data
+-rw-rw-rw-  1 vscode vscode  2214 Nov 26 13:27 production.log
+-rw-rw-rw-  1 vscode vscode   128 Nov 26 13:26 requirements.txt
+-rwxrwxrwx  1 vscode vscode   533 Nov 26 13:26 start_production.sh
+drwxr-xr-x+ 4 vscode vscode  4096 Nov 26 13:24 static
+drwxr-xr-x+ 2 vscode vscode  4096 Nov 26 13:24 templates
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/static
+total 16
+drwxr-xr-x+ 4 vscode vscode 4096 Nov 26 13:24 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:27 ..
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 css
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 js
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/static/js
+total 40
+drwxr-xr-x+ 2 vscode vscode  4096 Nov 26 13:24 .
+drwxr-xr-x+ 4 vscode vscode  4096 Nov 26 13:24 ..
+-rw-rw-rw-  1 vscode vscode 14594 Nov 26 13:27 app.js
+-rw-rw-rw-  1 vscode vscode 13884 Nov 26 13:27 app.js.bak
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/static/css
+total 20
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 .
+drwxr-xr-x+ 4 vscode vscode 4096 Nov 26 13:24 ..
+-rw-rw-rw-  1 vscode vscode 8946 Nov 26 13:27 style.css
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/__pycache__
+total 36
+drwxrwxrwx+ 2 vscode vscode  4096 Nov 26 13:27 .
+drwxrwxrwx+ 6 vscode vscode  4096 Nov 26 13:27 ..
+-rw-rw-rw-  1 vscode vscode  2113 Nov 26 13:27 app_aws.cpython-311.pyc
+-rw-rw-rw-  1 vscode vscode 23594 Nov 26 13:27 app_production.cpython-311.pyc
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/templates
+total 16
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:27 ..
+-rw-rw-rw-  1 vscode vscode 5540 Nov 26 13:27 index.html
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data
+total 20
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 26 13:24 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:27 ..
+drwxr-xr-x+ 4 vscode vscode 4096 Nov 26 13:24 certificate-templates
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 excel-samples
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 fonts
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data/fonts
+total 8
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 26 13:24 ..
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data/excel-samples
+total 36
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 26 13:24 ..
+-rw-rw-rw-  1 vscode vscode 1627 Nov 26 13:27 create-sample-data.py
+-rw-rw-rw-  1 vscode vscode  348 Nov 26 13:27 sample-structure.json
+-rw-rw-rw-  1 vscode vscode  396 Nov 26 13:27 student-data.csv
+-rw-rw-rw-  1 vscode vscode 5205 Nov 26 13:27 student-data.xlsx
+-rw-rw-rw-  1 vscode vscode 5108 Nov 26 13:27 test-data.xlsx
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data/certificate-templates
+total 16
+drwxr-xr-x+ 4 vscode vscode 4096 Nov 26 13:24 .
+drwxr-xr-x+ 5 vscode vscode 4096 Nov 26 13:24 ..
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 processed
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 raw
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data/certificate-templates/raw
+total 448
+drwxr-xr-x+ 2 vscode vscode   4096 Nov 26 13:24 .
+drwxr-xr-x+ 4 vscode vscode   4096 Nov 26 13:24 ..
+-rw-rw-rw-  1 vscode vscode 448844 Nov 26 13:27 certificate-template.png
+📁 /workspaces/aws-training-certificate-system/aws-deployment/complete-aws-package/data/certificate-templates/processed
+total 8
+drwxr-xr-x+ 2 vscode vscode 4096 Nov 26 13:24 .
+drwxr-xr-x+ 4 vscode vscode 4096 Nov 26 13:24 ..
+📁 /workspaces/aws-training-certificate-system/aws-deployment/aws-deployment-package
+total 36
+drwxrwxrwx+ 3 vscode vscode 4096 Nov 26 13:20 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:31 ..
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:20 __pycache__
+-rw-rw-rw-  1 vscode vscode 1257 Nov 26 13:20 app_aws.py
+-rwxrwxrwx  1 vscode vscode  645 Nov 26 13:20 deploy.sh
+-rw-rw-rw-  1 vscode vscode 1377 Nov 26 13:18 deploy_test.log
+-rw-rw-rw-  1 vscode vscode 7500 Nov 26 13:20 deploy_test_fixed.log
+-rw-rw-rw-  1 vscode vscode  128 Nov 26 13:17 requirements.txt
+📁 /workspaces/aws-training-certificate-system/aws-deployment/aws-deployment-package/__pycache__
+total 12
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:20 .
+drwxrwxrwx+ 3 vscode vscode 4096 Nov 26 13:20 ..
+-rw-rw-rw-  1 vscode vscode 2198 Nov 26 13:20 app_aws.cpython-311.pyc
+📁 /workspaces/aws-training-certificate-system/aws-deployment/__pycache__
+total 12
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:13 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:31 ..
+-rw-rw-rw-  1 vscode vscode 2175 Nov 26 13:13 app_aws.cpython-311.pyc
+📁 /workspaces/aws-training-certificate-system/aws-deployment/data
+total 16
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 26 13:27 .
+drwxrwxrwx+ 6 vscode vscode 4096 Nov 26 13:31 ..
+drwxrwxrwx+ 3 vscode vscode 4096 Nov 26 13:27 certificate-templates
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:27 excel-samples
+📁 /workspaces/aws-training-certificate-system/aws-deployment/data/excel-samples
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:27 .
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 26 13:27 ..
+📁 /workspaces/aws-training-certificate-system/aws-deployment/data/certificate-templates
+total 12
+drwxrwxrwx+ 3 vscode vscode 4096 Nov 26 13:27 .
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 26 13:27 ..
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:27 processed
+📁 /workspaces/aws-training-certificate-system/aws-deployment/data/certificate-templates/processed
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 13:27 .
+drwxrwxrwx+ 3 vscode vscode 4096 Nov 26 13:27 ..
+📁 /workspaces/aws-training-certificate-system/deployment
+total 16
+drwxrwxrwx+  2 vscode vscode 4096 Nov 26 13:31 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+-rw-rw-rw-   1 vscode vscode  128 Nov 26 13:13 requirements.txt
+-rwxrwxrwx   1 vscode vscode  537 Nov 26 13:31 start_production.sh
+📁 /workspaces/aws-training-certificate-system/__pycache__
+total 32
+drwxrwxrwx+  2 vscode vscode  4096 Nov 26 13:14 .
+drwxrwxrwx+ 12 vscode root    4096 Nov 26 13:38 ..
+-rw-rw-rw-   1 vscode vscode 23558 Nov 26 13:14 app_production.cpython-311.pyc
+📁 /workspaces/aws-training-certificate-system/frontend
+total 20
+drwxrwxrwx+  5 vscode vscode 4096 Nov 15 16:19 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 16:19 css
+-rw-rw-rw-   1 vscode vscode    0 Nov 15 16:19 index.html
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 16:19 js
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 16:04 static
+📁 /workspaces/aws-training-certificate-system/frontend/static
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 15 16:04 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:19 ..
+📁 /workspaces/aws-training-certificate-system/frontend/js
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 15 16:19 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:19 ..
+-rw-rw-rw-  1 vscode vscode    0 Nov 15 16:19 app.js
+📁 /workspaces/aws-training-certificate-system/frontend/css
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 15 16:19 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:19 ..
+-rw-rw-rw-  1 vscode vscode    0 Nov 15 16:19 styles.css
+📁 /workspaces/aws-training-certificate-system/app
+total 40
+drwxrwxrwx+  5 vscode vscode  4096 Nov 26 13:31 .
+drwxrwxrwx+ 12 vscode root    4096 Nov 26 13:38 ..
+-rw-rw-rw-   1 vscode vscode  1250 Nov 26 13:31 app_aws.py
+-rw-rw-rw-   1 vscode vscode 15369 Nov 24 12:48 app_production.py
+drwxrwxrwx+  5 vscode vscode  4096 Nov 16 16:13 data
+drwxrwxrwx+  4 vscode vscode  4096 Nov 24 06:11 static
+drwxrwxrwx+  2 vscode vscode  4096 Nov 24 11:12 templates
+📁 /workspaces/aws-training-certificate-system/app/static
+total 16
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 24 06:11 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 26 13:31 ..
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 06:10 css
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 11:17 js
+📁 /workspaces/aws-training-certificate-system/app/static/js
+total 40
+drwxrwxrwx+ 2 vscode vscode  4096 Nov 24 11:17 .
+drwxrwxrwx+ 4 vscode vscode  4096 Nov 24 06:11 ..
+-rw-rw-rw-  1 vscode vscode 14594 Nov 24 11:17 app.js
+-rw-rw-rw-  1 vscode vscode 13884 Nov 24 11:01 app.js.bak
+📁 /workspaces/aws-training-certificate-system/app/static/css
+total 20
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 06:10 .
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 24 06:11 ..
+-rw-rw-rw-  1 vscode vscode 8946 Nov 24 06:10 style.css
+📁 /workspaces/aws-training-certificate-system/app/templates
+total 16
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 11:12 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 26 13:31 ..
+-rw-rw-rw-  1 vscode vscode 5540 Nov 24 11:12 index.html
+📁 /workspaces/aws-training-certificate-system/app/data
+total 20
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 16 16:13 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 26 13:31 ..
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 15 16:26 certificate-templates
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 07:11 excel-samples
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 16 16:13 fonts
+📁 /workspaces/aws-training-certificate-system/app/data/fonts
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 16 16:13 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 16 16:13 ..
+📁 /workspaces/aws-training-certificate-system/app/data/excel-samples
+total 36
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 26 07:11 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 16 16:13 ..
+-rw-rw-rw-  1 vscode vscode 1627 Nov 16 16:10 create-sample-data.py
+-rw-rw-rw-  1 vscode vscode  348 Nov 16 19:42 sample-structure.json
+-rw-rw-rw-  1 vscode vscode  396 Nov 26 07:11 student-data.csv
+-rw-rw-rw-  1 vscode vscode 5205 Nov 16 16:10 student-data.xlsx
+-rw-rw-rw-  1 vscode vscode 5108 Nov 24 06:33 test-data.xlsx
+📁 /workspaces/aws-training-certificate-system/app/data/certificate-templates
+total 16
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 15 16:26 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 16 16:13 ..
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 13:23 processed
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 16 17:14 raw
+📁 /workspaces/aws-training-certificate-system/app/data/certificate-templates/raw
+total 448
+drwxrwxrwx+ 2 vscode vscode   4096 Nov 16 17:14 .
+drwxrwxrwx+ 4 vscode vscode   4096 Nov 15 16:26 ..
+-rw-rw-rw-  1 vscode vscode 448844 Nov 16 17:14 certificate-template.png
+📁 /workspaces/aws-training-certificate-system/app/data/certificate-templates/processed
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 13:23 .
+drwxrwxrwx+ 4 vscode vscode 4096 Nov 15 16:26 ..
+📁 /workspaces/aws-training-certificate-system/.bin
+total 8
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 18:07 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+📁 /workspaces/aws-training-certificate-system/.devcontainer
+total 20
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 18:12 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+-rw-rw-rw-   1 vscode vscode  583 Nov 15 17:44 devcontainer.json
+-rw-rw-rw-   1 vscode vscode  645 Nov 15 17:44 devcontainer.json.backup
+-rwxrwxrwx   1 vscode vscode  746 Nov 15 16:01 setup.sh
+📁 /workspaces/aws-training-certificate-system/backend
+total 20
+drwxrwxrwx+  5 vscode vscode 4096 Nov 15 16:04 .
+drwxrwxrwx+ 12 vscode root   4096 Nov 26 13:38 ..
+drwxrwxrwx+  2 vscode vscode 4096 Nov 24 13:26 certificate-generator
+drwxrwxrwx+  2 vscode vscode 4096 Nov 16 16:17 excel-importer
+drwxrwxrwx+  2 vscode vscode 4096 Nov 15 16:19 student-auth
+📁 /workspaces/aws-training-certificate-system/backend/certificate-generator
+total 20
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 24 13:26 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:04 ..
+-rw-rw-rw-  1 vscode vscode 9064 Nov 16 17:29 certificate_generator.py
+📁 /workspaces/aws-training-certificate-system/backend/excel-importer
+total 16
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 16 16:17 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:04 ..
+-rw-rw-rw-  1 vscode vscode 4661 Nov 16 16:17 excel_processor.py
+-rw-rw-rw-  1 vscode vscode    0 Nov 15 16:19 lambda_function.py
+📁 /workspaces/aws-training-certificate-system/backend/student-auth
+total 8
+drwxrwxrwx+ 2 vscode vscode 4096 Nov 15 16:19 .
+drwxrwxrwx+ 5 vscode vscode 4096 Nov 15 16:04 ..
+-rw-rw-rw-  1 vscode vscode    0 Nov 15 16:19 lambda_function.py

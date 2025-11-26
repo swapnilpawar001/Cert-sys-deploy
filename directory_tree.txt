@@ -1,0 +1,99 @@
+/workspaces/aws-training-certificate-system
+├── README.md
+├── UPLOAD_INSTRUCTIONS.md
+├── __pycache__
+│   └── app_production.cpython-311.pyc
+├── app
+│   ├── app_aws.py
+│   ├── app_production.py
+│   ├── data
+│   │   ├── certificate-templates
+│   │   │   ├── processed
+│   │   │   └── raw
+│   │   │       └── certificate-template.png
+│   │   ├── excel-samples
+│   │   │   ├── create-sample-data.py
+│   │   │   ├── sample-structure.json
+│   │   │   ├── student-data.csv
+│   │   │   ├── student-data.xlsx
+│   │   │   └── test-data.xlsx
+│   │   └── fonts
+│   ├── static
+│   │   ├── css
+│   │   │   └── style.css
+│   │   └── js
+│   │       ├── app.js
+│   │       └── app.js.bak
+│   └── templates
+│       └── index.html
+├── aws-deployment
+│   ├── __pycache__
+│   │   └── app_aws.cpython-311.pyc
+│   ├── aws-deployment-package
+│   │   ├── __pycache__
+│   │   │   └── app_aws.cpython-311.pyc
+│   │   ├── app_aws.py
+│   │   ├── deploy.sh
+│   │   ├── deploy_test.log
+│   │   ├── deploy_test_fixed.log
+│   │   └── requirements.txt
+│   ├── complete-aws-package
+│   │   ├── __pycache__
+│   │   │   ├── app_aws.cpython-311.pyc
+│   │   │   └── app_production.cpython-311.pyc
+│   │   ├── app_aws.py
+│   │   ├── app_production.py
+│   │   ├── data
+│   │   │   ├── certificate-templates
+│   │   │   │   ├── processed
+│   │   │   │   └── raw
+│   │   │   │       └── certificate-template.png
+│   │   │   ├── excel-samples
+│   │   │   │   ├── create-sample-data.py
+│   │   │   │   ├── sample-structure.json
+│   │   │   │   ├── student-data.csv
+│   │   │   │   ├── student-data.xlsx
+│   │   │   │   └── test-data.xlsx
+│   │   │   └── fonts
+│   │   ├── production.log
+│   │   ├── requirements.txt
+│   │   ├── start_production.sh
+│   │   ├── static
+│   │   │   ├── css
+│   │   │   │   └── style.css
+│   │   │   └── js
+│   │   │       ├── app.js
+│   │   │       └── app.js.bak
+│   │   └── templates
+│   │       └── index.html
+│   ├── data
+│   │   ├── certificate-templates
+│   │   │   └── processed
+│   │   └── excel-samples
+│   └── gunicorn_test.log
+├── backend
+│   ├── certificate-generator
+│   │   └── certificate_generator.py
+│   ├── excel-importer
+│   │   ├── excel_processor.py
+│   │   └── lambda_function.py
+│   └── student-auth
+│       └── lambda_function.py
+├── deployment
+│   ├── requirements.txt
+│   └── start_production.sh
+├── directory_structure.txt
+├── directory_tree.txt
+├── flask_aws_test.log
+├── frontend
+│   ├── css
+│   │   └── styles.css
+│   ├── index.html
+│   ├── js
+│   │   └── app.js
+│   └── static
+├── package-lock.json
+├── package.json
+└── tests
+
+43 directories, 54 files

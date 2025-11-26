@@ -1,0 +1,19 @@
+🚀 Deploying AWS Training Certificate System...
+WARNING: Ignoring invalid distribution ~andas (/home/vscode/.local/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~andas (/home/vscode/.local/lib/python3.11/site-packages)
+WARNING: Ignoring invalid distribution ~andas (/home/vscode/.local/lib/python3.11/site-packages)
+cp: cannot stat '../templates': No such file or directory
+cp: cannot stat '../static': No such file or directory
+cp: cannot stat '../data': No such file or directory
+[2025-11-26 13:18:23 +0000] [9480] [INFO] Starting gunicorn 21.2.0
+[2025-11-26 13:18:23 +0000] [9480] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-11-26 13:18:23 +0000] [9480] [ERROR] Retrying in 1 second.
+[2025-11-26 13:18:24 +0000] [9480] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-11-26 13:18:24 +0000] [9480] [ERROR] Retrying in 1 second.
+[2025-11-26 13:18:25 +0000] [9480] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-11-26 13:18:25 +0000] [9480] [ERROR] Retrying in 1 second.
+[2025-11-26 13:18:26 +0000] [9480] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-11-26 13:18:26 +0000] [9480] [ERROR] Retrying in 1 second.
+[2025-11-26 13:18:27 +0000] [9480] [ERROR] Connection in use: ('0.0.0.0', 5000)
+[2025-11-26 13:18:27 +0000] [9480] [ERROR] Retrying in 1 second.
+[2025-11-26 13:18:28 +0000] [9480] [ERROR] Can't connect to ('0.0.0.0', 5000)
