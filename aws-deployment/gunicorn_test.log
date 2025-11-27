@@ -1,9 +1,0 @@
-[2025-11-26 13:16:04 +0000] [8267] [INFO] Starting gunicorn 21.2.0
-[2025-11-26 13:16:04 +0000] [8267] [INFO] Listening at: http://0.0.0.0:5001 (8267)
-[2025-11-26 13:16:04 +0000] [8267] [INFO] Using worker: sync
-[2025-11-26 13:16:04 +0000] [8285] [INFO] Booting worker with pid: 8285
-2025-11-26 13:16:04,592 - app_production - INFO - ✅ Loaded 6 students from /workspaces/aws-training-certificate-system/data/excel-samples/student-data.xlsx
-2025-11-26 13:16:04,594 - app_aws - INFO - 🚀 AWS Training Certificate System - AWS Deployment Ready
-[2025-11-26 13:16:07 +0000] [8267] [INFO] Handling signal: term
-[2025-11-26 13:16:07 +0000] [8285] [INFO] Worker exiting (pid: 8285)
-[2025-11-26 13:16:07 +0000] [8267] [INFO] Shutting down: Master
