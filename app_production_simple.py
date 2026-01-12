@@ -684,8 +684,12 @@ def admin_import_students():
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
         
-        # Read Excel file
-        df = pd.read_excel(filepath)
+        # Read Excel file - try first sheet
+        try:
+            df = pd.read_excel(filepath, sheet_name=0)
+        except Exception as e:
+            logger.error(f"Error reading Excel: {e}")
+            return jsonify({"error": f"Cannot read Excel file: {str(e)}"}), 400
         
         # Validate required columns
         required_columns = ['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id']
@@ -696,8 +700,21 @@ def admin_import_students():
                 "error": f"Missing required columns: {', '.join(missing_columns)}"
             }), 400
         
-        # Convert to records
-        new_students = df.to_dict('records')
+        # Convert to records and clean data
+        new_students = []
+        for _, row in df.iterrows():
+            try:
+                student = {
+                    'student_name': str(row['student_name']).strip(),
+                    'batch_number': str(row['batch_number']).strip(),
+                    'batch_start_date': str(row['batch_start_date']).strip(),
+                    'batch_end_date': str(row['batch_end_date']).strip(),
+                    'sixerclass_id': str(row['sixerclass_id']).strip()
+                }
+                new_students.append(student)
+            except Exception as e:
+                logger.error(f"Error processing row: {e}")
+                continue
         
         # Validate and add students
         imported_count = 0
@@ -714,8 +731,11 @@ def admin_import_students():
             imported_count += 1
         
         # Save updated data to Excel
-        updated_df = pd.DataFrame(students_data)
-        updated_df.to_excel('excel-samples/student-data.xlsx', index=False)
+        try:
+            updated_df = pd.DataFrame(students_data)
+            updated_df.to_excel('excel-samples/student-data.xlsx', index=False)
+        except Exception as e:
+            logger.error(f"Error saving data: {e}")
         
         logger.info(f"✅ Imported {imported_count} students from {filename}")
         
@@ -728,7 +748,7 @@ def admin_import_students():
         
     except Exception as e:
         logger.error(f"❌ Error importing students: {e}")
-        return jsonify({"error": "Import failed"}), 500
+        return jsonify({"error": f"Import failed: {str(e)}"}), 500
 
 @app.route('/admin/api/generate-certificate', methods=['POST'])
 def admin_generate_certificate():

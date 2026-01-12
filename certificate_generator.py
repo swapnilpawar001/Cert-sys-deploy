@@ -23,6 +23,17 @@ class CertificateGenerator:
             print("❌ Certificate template not found!")
         else:
             print(f"✅ Using template: {self.template_path}")
+    
+    def format_date(self, date_str):
+        """Convert date to dd-mm-yyyy format"""
+        try:
+            # Parse the date string (assuming it's in YYYY-MM-DD format)
+            if isinstance(date_str, str):
+                date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+                return date_obj.strftime('%d-%m-%Y')
+            return str(date_str)
+        except:
+            return str(date_str)
         
     def get_image_dimensions(self):
         """Get original image dimensions"""
@@ -50,23 +61,36 @@ class CertificateGenerator:
             # Draw template image at exact size
             c.drawImage(self.template_path, 0, 0, width=img_width, height=img_height)
             
-            # Add text with perfect coordinates (from your conversation)
-            c.setFont("Helvetica-Bold", 28)
+            # Dynamic center alignment for student name
+            name_font_size = 32
+            c.setFont("Helvetica-Bold", name_font_size)
             c.setFillColorRGB(0, 0, 0)  # Black text
             
-            # Student name at perfect position
-            c.drawString(405, 400, student_data['student_name'].upper())
+            # Define name area boundaries (matching your underlined space)
+            name_start_x = 269   # Left boundary of underlined space
+            name_end_x = 1280    # Right boundary of underlined space
+            name_y = 600         # Y position
             
-            # Dates at perfect positions
-            c.setFont("Helvetica", 18)
-            c.drawString(345, 277, str(student_data['batch_start_date']))
-            c.drawString(625, 277, str(student_data['batch_end_date']))
+            # Calculate center position for name
+            name_text = student_data['student_name'].upper()
+            name_width = c.stringWidth(name_text, "Helvetica-Bold", name_font_size)
+            name_center_x = name_start_x + (name_end_x - name_start_x - name_width) / 2
+            
+            # Draw centered name
+            c.drawString(name_center_x, name_y, name_text)
+            
+            # Dates at perfect positions with dd-mm-yyyy format
+            c.setFont("Helvetica", 26)
+            start_date = self.format_date(student_data['batch_start_date'])
+            end_date = self.format_date(student_data['batch_end_date'])
+            c.drawString(565, 418, start_date)
+            c.drawString(965, 418, end_date)
             
             # Additional info
             c.setFont("Helvetica", 12)
             c.drawString(50, 50, f"Batch: {student_data['batch_number']}")
             c.drawString(50, 35, f"ID: {student_data['sixerclass_id']}")
-            c.drawString(400, 35, f"Issued: {datetime.now().strftime('%B %d, %Y')}")
+            c.drawString(400, 35, f"Issued: {datetime.now().strftime('%d-%m-%Y')}")
             
             c.save()
             print(f"✅ Template-based certificate created: {output_path}")
