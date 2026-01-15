@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, jsonify, send_file, session, redirect
 from flask_cors import CORS
-import pandas as pd
 import logging
 import os
 from werkzeug.utils import secure_filename
 from datetime import datetime
 from certificate_generator import CertificateGenerator
+import openpyxl
+from io import BytesIO
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -90,10 +91,15 @@ def create_sample_data():
         }
     ]
     
-    # Save sample data to Excel using absolute path
-    df = pd.DataFrame(sample_data)
+    # Save sample data to Excel using openpyxl
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.append(['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id'])
+    for student in sample_data:
+        ws.append([student['student_name'], student['batch_number'], student['batch_start_date'], student['batch_end_date'], student['sixerclass_id']])
+    
     excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
-    df.to_excel(excel_path, index=False)
+    wb.save(excel_path)
     logger.info(f"✅ Created sample Excel data with 6 students at {excel_path}")
     
     return sample_data
@@ -102,16 +108,20 @@ def create_sample_data():
 def load_students_data():
     global students_data
     try:
-        # Use absolute path from config
         excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
         
         if os.path.exists(excel_path):
-            df = pd.read_excel(excel_path)
-            students_data = df.to_dict('records')
+            wb = openpyxl.load_workbook(excel_path)
+            ws = wb.active
+            students_data = []
+            headers = [cell.value for cell in ws[1]]
+            for row in ws.iter_rows(min_row=2, values_only=True):
+                if row[0]:  # Skip empty rows
+                    student = dict(zip(headers, row))
+                    students_data.append(student)
             logger.info(f"✅ Loaded {len(students_data)} students from {excel_path}")
             return students_data
         
-        # If no file found, create sample data
         logger.warning("❌ No Excel file found, creating sample data")
         students_data = create_sample_data()
         return students_data
@@ -1996,15 +2006,26 @@ def admin_export_students():
         return jsonify({"error": "Unauthorized"}), 401
     
     try:
-        df = pd.DataFrame(students_data)
+        # Create workbook and worksheet
+        wb = openpyxl.Workbook()
+        ws = wb.active
+        ws.title = "Students"
+        
+        # Add headers
+        headers = ['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id']
+        ws.append(headers)
+        
+        # Add data
+        for student in students_data:
+            ws.append([student[header] for header in headers])
         
         # Create filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"students_export_{timestamp}.xlsx"
         filepath = os.path.join(app.config['EXCEL_DIR'], filename)
         
-        # Export to Excel
-        df.to_excel(filepath, index=False, engine='openpyxl')
+        # Save to file
+        wb.save(filepath)
         
         logger.info(f"✅ Students exported to: {filename}")
         return send_file(filepath, as_attachment=True, download_name=filename)
@@ -2040,14 +2061,25 @@ def admin_import_students():
         
         # Read Excel file - try first sheet
         try:
-            df = pd.read_excel(filepath, sheet_name=0)
+            wb = openpyxl.load_workbook(filepath)
+            ws = wb.active
+            
+            # Get headers from first row
+            headers = [cell.value for cell in ws[1]]
+            
+            # Read data rows
+            data_rows = []
+            for row in ws.iter_rows(min_row=2, values_only=True):
+                if row[0]:  # Skip empty rows
+                    data_rows.append(dict(zip(headers, row)))
+                    
         except Exception as e:
             logger.error(f"Error reading Excel: {e}")
             return jsonify({"error": f"Cannot read Excel file: {str(e)}"}), 400
         
         # Validate required columns
         required_columns = ['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id']
-        missing_columns = [col for col in required_columns if col not in df.columns]
+        missing_columns = [col for col in required_columns if col not in headers]
         
         if missing_columns:
             return jsonify({
@@ -2056,14 +2088,14 @@ def admin_import_students():
         
         # Convert to records and clean data
         new_students = []
-        for _, row in df.iterrows():
+        for row_data in data_rows:
             try:
                 student = {
-                    'student_name': str(row['student_name']).strip(),
-                    'batch_number': str(row['batch_number']).strip(),
-                    'batch_start_date': str(row['batch_start_date']).strip(),
-                    'batch_end_date': str(row['batch_end_date']).strip(),
-                    'sixerclass_id': str(row['sixerclass_id']).strip()
+                    'student_name': str(row_data['student_name']).strip(),
+                    'batch_number': str(row_data['batch_number']).strip(),
+                    'batch_start_date': str(row_data['batch_start_date']).strip(),
+                    'batch_end_date': str(row_data['batch_end_date']).strip(),
+                    'sixerclass_id': str(row_data['sixerclass_id']).strip()
                 }
                 new_students.append(student)
             except Exception as e:
@@ -2086,9 +2118,14 @@ def admin_import_students():
         
         # Save updated data to Excel
         try:
-            updated_df = pd.DataFrame(students_data)
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.append(['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id'])
+            for student in students_data:
+                ws.append([student['student_name'], student['batch_number'], student['batch_start_date'], student['batch_end_date'], student['sixerclass_id']])
+            
             updated_excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
-            df.to_excel(excel_path, index=False)
+            wb.save(updated_excel_path)
         except Exception as e:
             logger.error(f"Error saving data: {e}")
         
@@ -2154,9 +2191,14 @@ def admin_update_student():
         
         # Save to Excel file
         try:
-            df = pd.DataFrame(students_data)
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.append(['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id'])
+            for student in students_data:
+                ws.append([student['student_name'], student['batch_number'], student['batch_start_date'], student['batch_end_date'], student['sixerclass_id']])
+            
             excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
-            df.to_excel(excel_path, index=False)
+            wb.save(excel_path)
         except Exception as e:
             logger.error(f"Error saving data: {e}")
         
@@ -2214,9 +2256,14 @@ def admin_add_student():
         
         # Save to Excel file
         try:
-            df = pd.DataFrame(students_data)
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.append(['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id'])
+            for student in students_data:
+                ws.append([student['student_name'], student['batch_number'], student['batch_start_date'], student['batch_end_date'], student['sixerclass_id']])
+            
             excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
-            df.to_excel(excel_path, index=False)
+            wb.save(excel_path)
         except Exception as e:
             logger.error(f"Error saving data: {e}")
         
@@ -2257,9 +2304,14 @@ def admin_delete_student():
         
         # Save updated data to Excel
         try:
-            df = pd.DataFrame(students_data)
+            wb = openpyxl.Workbook()
+            ws = wb.active
+            ws.append(['student_name', 'batch_number', 'batch_start_date', 'batch_end_date', 'sixerclass_id'])
+            for student in students_data:
+                ws.append([student['student_name'], student['batch_number'], student['batch_start_date'], student['batch_end_date'], student['sixerclass_id']])
+            
             excel_path = os.path.join(app.config['EXCEL_DIR'], 'student-data.xlsx')
-            df.to_excel(excel_path, index=False)
+            wb.save(excel_path)
         except Exception as e:
             logger.error(f"Error saving data: {e}")
         
@@ -2358,26 +2410,26 @@ def admin_export_reports():
         return jsonify({"error": "Unauthorized"}), 401
     
     try:
-        # Prepare data for export
-        export_data = []
-        for log in download_logs:
-            export_data.append({
-                'Student Name': log['student_name'],
-                'SixerClass ID': log['sixerclass_id'],
-                'Batch Number': log['batch_number'],
-                'Download Time': log['download_time'],
-                'Filename': log['filename']
-            })
+        # Create workbook and worksheet
+        wb = openpyxl.Workbook()
+        ws = wb.active
+        ws.title = "Reports"
         
-        df = pd.DataFrame(export_data)
+        # Add headers
+        headers = ['Student Name', 'SixerClass ID', 'Batch Number', 'Download Time', 'Filename']
+        ws.append(headers)
+        
+        # Add data
+        for log in download_logs:
+            ws.append([log['student_name'], log['sixerclass_id'], log['batch_number'], log['download_time'], log['filename']])
         
         # Create filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"certificate_reports_{timestamp}.xlsx"
         filepath = os.path.join(app.config['EXCEL_DIR'], filename)
         
-        # Export to Excel
-        df.to_excel(filepath, index=False, engine='openpyxl')
+        # Save to file
+        wb.save(filepath)
         
         logger.info(f"✅ Reports exported to: {filename}")
         return send_file(filepath, as_attachment=True, download_name=filename)
@@ -2396,8 +2448,16 @@ def admin_export_download_status():
         # Get students who have downloaded certificates
         downloaded_students = set(log['sixerclass_id'] for log in download_logs)
         
-        # Prepare data for export
-        export_data = []
+        # Create workbook and worksheet
+        wb = openpyxl.Workbook()
+        ws = wb.active
+        ws.title = "Download Status"
+        
+        # Add headers
+        headers = ['Student Name', 'SixerClass ID', 'Batch Number', 'Batch Start Date', 'Batch End Date', 'Certificate Downloaded', 'Download Count', 'Last Download']
+        ws.append(headers)
+        
+        # Add data
         for student in students_data:
             has_downloaded = student['sixerclass_id'] in downloaded_students
             download_count = sum(1 for log in download_logs if log['sixerclass_id'] == student['sixerclass_id'])
@@ -2409,26 +2469,24 @@ def admin_export_download_status():
                     last_download = log['download_time']
                     break
             
-            export_data.append({
-                'Student Name': student['student_name'],
-                'SixerClass ID': student['sixerclass_id'],
-                'Batch Number': student['batch_number'],
-                'Batch Start Date': student['batch_start_date'],
-                'Batch End Date': student['batch_end_date'],
-                'Certificate Downloaded': 'Yes' if has_downloaded else 'No',
-                'Download Count': download_count,
-                'Last Download': last_download if last_download else 'Never'
-            })
-        
-        df = pd.DataFrame(export_data)
+            ws.append([
+                student['student_name'],
+                student['sixerclass_id'],
+                student['batch_number'],
+                student['batch_start_date'],
+                student['batch_end_date'],
+                'Yes' if has_downloaded else 'No',
+                download_count,
+                last_download if last_download else 'Never'
+            ])
         
         # Create filename with timestamp
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"download_status_{timestamp}.xlsx"
         filepath = os.path.join(app.config['EXCEL_DIR'], filename)
         
-        # Export to Excel
-        df.to_excel(filepath, index=False, engine='openpyxl')
+        # Save to file
+        wb.save(filepath)
         
         logger.info(f"✅ Download status exported to: {filename}")
         return send_file(filepath, as_attachment=True, download_name=filename)
